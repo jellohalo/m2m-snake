@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sasquatch Snake</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <style>
+    body {
+      text-align: center;
+      background: #878686;
+      color: #F8F8F8;
+      font-family: 'Press Start 2P', monospace;
+    }
+    canvas {
+      display: block;
+      margin: 10px auto;
+      background: #000;
+    }
+    button {
+      font-family: 'Press Start 2P', monospace;
+      font-size: 20px;
+      margin: 4px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      background-color: #444;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #666;
+    }
+  </style>
+</head>
+<body>
+  <h1>Sasquatch Snake</h1>
+  <p id="score">Score: 0</p>
+  <p id="highScore">High Score: 0</p>
+  <canvas id="gameCanvas"></canvas>
+
+  <!-- Mobile Arrow Controls -->
+  <div style="margin: 20px;">
+    <div><button id="btn-up">⬆️</button></div>
+    <div>
+      <button id="btn-left">⬅️</button>
+      <button id="btn-down">⬇️</button>
+      <button id="btn-right">➡️</button>
+    </div>
+  </div>
+
+  <!-- ✅ Single Start/Restart button -->
+  <button id="startBtn" onclick="startGame()">Start</button>
+
+  <script src="game.js"></script>
+</body>
+
